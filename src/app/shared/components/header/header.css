@@ -1,0 +1,18 @@
+
+
+header .container-header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-header  {
+    width: 100%;
+    max-width: 1040px;  
+    display: flex;
+    justify-content: space-between;
+}
+.container-header nav ul{
+    display: flex;
+}
