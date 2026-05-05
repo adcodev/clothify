@@ -1,39 +1,51 @@
-
-
 header {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.container-header  {
     width: 100%;
-    max-width: 1040px;  
+    max-width: 100vw;
+    border-bottom: 1px solid #ddd;
+    font-family: "Nixie One", system-ui;
+}
+.container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1.5px solid #ddd;
+    margin: 0 auto;
+    width: 90vw;
 }
-.container-header nav ul{
+.container-header span {
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+.container-header nav ul {
     display: flex;
+    gap: 50px;
+}
+.container-header nav ul li a {
+    font-family: "Jost", Roboto, sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+.container-header .list-search img{
+    width: 20px;
+}
+
+.container-header .list-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
-.container-header nav ul li {
-    list-style: none;
+
+.container-header .list-search .search{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
-.container-header nav ul li a{
-    text-decoration: none;
-    color: #000;
-}
-.container-header nav ul li a:hover {
-    cursor: pointer;
-    color: #1576c1;
-}
-.list-search {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #f00;
+.container-header .list-search .search input{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+    margin-top: 5px;
 }
