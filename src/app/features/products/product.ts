@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from "@angular/core";
+import { Component, inject} from "@angular/core";
 import { ProductService } from "./product.service";
 
 
@@ -9,9 +9,7 @@ import { ProductService } from "./product.service";
     styleUrl: './product.css'
 })
 
-export class ProductComponent implements OnInit{
-    listProduct = inject(ProductService);
-    ngOnInit(): void {
-        this.listProduct.getProducts();
-    }     
+export class ProductComponent {
+    listProducts = inject(ProductService);
+    products = this.listProducts.getProducts();
 }

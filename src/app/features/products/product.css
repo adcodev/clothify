@@ -103,6 +103,7 @@
 .container-products .products .container-target .target img {
     width: 100%;
     margin-bottom: 10px;
+    height: 370px;
 }
 .container-products .products .container-target .target .target-inf h4 {
     font-size: 18px;
@@ -112,6 +113,9 @@
     font-size: 16px;
     color: #9d9d9d;
     font-weight: 300;
+}
+.container-products .products .container-target .target .target-inf .price {
+    color: #333;
 }
 .container-products .products .container-target .target .target-inf {
     display: flex;

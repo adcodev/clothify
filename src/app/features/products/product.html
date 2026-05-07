@@ -42,12 +42,13 @@
     </div>
     <div class="products">
         <div class="container-target">
-            @for (product of listProduct.getProducts(); track product.id) {
+            @for (product of products; track product.id) {
             <div class="target">    
-                <img [src]="[product.images]">
+                <img [src]="product.images[0]">
                 <div class="target-inf">
                     <h4>{{product.name}}</h4>
                     <p>{{product.description}}</p>
+                    <p class="price">{{product.price}} {{product.currency}}</p>
                 </div>
                 <button class="btn-product" >Comprar</button>
             </div>
