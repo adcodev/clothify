@@ -13,7 +13,7 @@ export class ProductService {
       description: 'Polo de algodón',
       price: 49.9,
       currency: 'PEN',
-      images: ['https://via.placeholder.com/300'],
+      images: ['assets/images/girl.jpg'],
       category: 'polos',
       stock: 10,
       createAt: new Date()
@@ -23,4 +23,6 @@ export class ProductService {
   getProducts(): Product[] {
     return  this.products;
   }
+
+
 }

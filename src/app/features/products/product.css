@@ -3,27 +3,33 @@
     width: 90vw;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
+    gap: 20px;
     font-family: Roboto, sans-serif;
 }
 .container-products .sidebar {
     border-right: 1px solid #ddd;
-    padding: 30px 30px 0 0 ;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 20px;
+    width: 100%;
+    max-width: 200px;
+    padding: 30px 30px 0 0;
 }
 .container-products .sidebar h2 {
     font-size: 20px;
     color: #b6b6b6;
     letter-spacing: 2px;
     font-weight: 300;
+    
 }
 .container-products .sidebar .container-category h3,
 .container-products .sidebar .container-price h3 {
     color: #222;
     letter-spacing: 2px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 } 
 .container-products .sidebar .container-category {
     display: flex;
@@ -51,8 +57,77 @@
     cursor: pointer;
 }
 
+.container-products .sidebar .container-category .category .filter input[type="checkbox"]:checked {
+    background: #333;
+}
+
+.container-products .sidebar .container-category .category span {
+    color: #aeaeae;
+    font-weight: 300;
+}
 
 
+.container-products .sidebar .container-price .price{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.container-products .sidebar .container-price .price .minPrice input,
+.container-products .sidebar .container-price .price .maxPrice input {
+    width: 40px;
+}
+
+
+
+
+.container-products .products {
+    width: 60vw;
+}
+
+.container-products .products .container-target {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+}
+.container-products .products .container-target .target {
+    width: 100%;
+    max-width: 300px;
+    background-color: #eee;
+    box-shadow: 0 0 10px #0003;
+    padding: 20px 10px;
+}
+.container-products .products .container-target .target img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.container-products .products .container-target .target .target-inf h4 {
+    font-size: 18px;
+    color: #333;
+}
+.container-products .products .container-target .target .target-inf p {
+    font-size: 16px;
+    color: #9d9d9d;
+    font-weight: 300;
+}
+.container-products .products .container-target .target .target-inf {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.container-products .products .container-target .target .btn-product {
+    display: block;
+    margin: 10px 10px 0 0;
+    margin-left: auto;
+    padding: 8px 12px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+}
 
 
 
